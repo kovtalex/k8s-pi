@@ -187,7 +187,7 @@ sudo apt install containerd -y
 sudo mkdir -p /etc/containerd
 
 sudo containerd config default | sudo tee /etc/containerd/config.toml
-sudo systemctl restart containerds
+sudo systemctl restart containerd
 
 curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add
 sudo apt-add-repository "deb http://apt.kubernetes.io/ kubernetes-xenial main"
