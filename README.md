@@ -209,7 +209,7 @@ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 ## Installing CNI plugin
 
 ```bash
-curl https://docs.projectcalico.org/manifests/calico-typha.yaml -o calico.yam
+curl https://docs.projectcalico.org/manifests/calico-typha.yaml -o calico.yaml
 kubectl apply -f calico.yaml
 ```
 
