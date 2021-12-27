@@ -92,6 +92,7 @@ network:
       gateway4: 192.168.0.1
       nameservers:
         addresses: [192.168.0.1, 8.8.8.8]
+        search: [domain.local]
 ```
 
 ```bash
