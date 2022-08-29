@@ -79,16 +79,16 @@ sudo vi /etc/netplan/01-netcfg.yaml
 
 ```bash
 network:
-  version: 2
   ethernets:
     eth0:
       dhcp4: no
       addresses:
-       - <ip>/24
+        - <ip>/24
       gateway4: 192.168.0.1
       nameservers:
         addresses: [192.168.0.1, 8.8.8.8]
         search: [domain.local]
+  version: 2
 ```
 
 ```bash
