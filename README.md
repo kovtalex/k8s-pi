@@ -16,11 +16,7 @@ sudo adduser k8s-user
 ## Adding Privilege Escalation
 
 ```bash
-sudo visudo
-```
-
-```bash
-k8s-user    ALL=(ALL:ALL) ALL
+sudo usermod -aG sudo k8s-user
 ```
 
 ```bash
